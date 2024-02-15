@@ -7,6 +7,18 @@ public class Trafico {
     private int duracion;
     private int cantidadDatos;
 
+    public Dispositivo getOrigen() {
+        return origen;
+    }
+
+    public Dispositivo getDestino() {
+        return destino;
+    }
+
+    public int getCantidadDatos() {
+        return cantidadDatos;
+    }
+
     public Trafico() {
         this.origen = origen;
         this.destino = destino;

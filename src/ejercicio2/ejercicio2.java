@@ -5,7 +5,7 @@ import java.util.*;
 
 public class ejercicio2 {
 
-    public static Red crearRed(Configuracion configuracion){
+    public static Red crearRed(Configuracion configuracion) {
 
         Red red = new Red();
         for (int i = 0; i < configuracion.cantidadRouters; i++) {
@@ -24,7 +24,9 @@ public class ejercicio2 {
     public static void main(String[] args) {
 
         Configuracion configuracion = Configuracion.obtenerConfigUsuario();
+
+        Red red = crearRed(configuracion);
+
+
     }
-
 }
-
