@@ -6,6 +6,7 @@ public class MainContexto {
     final static BaseDatos BDD = new BaseDatos();
 
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
         boolean continuar = true;
         while (continuar) {
@@ -18,6 +19,7 @@ public class MainContexto {
 
     }
 
+    // Metodo para obtener las citas de un contexto
     public static List<Cita> obtenerCitasContexto(String contexto){
         List<Cita> citasFiltradas = new ArrayList<Cita>();
         for (Cita cita : BDD.getBDD()) {
@@ -27,6 +29,8 @@ public class MainContexto {
         }
         return citasFiltradas;
     }
+
+    // Metodo para generar una cita aleatoria de un contexto
     public static void generarCitaContexto(String contexto) {
         List<Cita> citasFiltradas = obtenerCitasContexto(contexto);
         if (!citasFiltradas.isEmpty()) {
@@ -36,7 +40,7 @@ public class MainContexto {
             System.out.println("Lo siento, no hay citas disponibles para este contexto.");
         }
     }
-
+    // Metodo para obtener el contexto de la cita
     public static String obtenerContexto(Scanner sc){
         System.out.println("Introduce el contexto de la cita que quieres obtener (Motivacion, Inspiracion, Ciencia, Reflexion, Exploracion)");
         return sc.nextLine();
@@ -46,6 +50,7 @@ public class MainContexto {
         System.out.println("Cita: " + cita);
     }
 
+    // Metodo para esperar la solicitud de una nueva cita
     public static boolean esperarSolicitudParaNuevaCita(Scanner sc){
 
         System.out.println("Desea usted obtener otra cita inspiradora? (y/n)");
@@ -62,7 +67,7 @@ public class MainContexto {
         }
 
     }
-
+    // Metodo para obtener una cita aleatoria
     public static int obtenerCitaAleatoria(int max){
         Random rand = new Random();
         return rand.nextInt(max);

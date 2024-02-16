@@ -1,5 +1,5 @@
 package ejercicio7y8;
-public class Cita {
+public class Cita { // Clase Cita
     private String autor;
     private String cita;
     private String contexto;
@@ -9,6 +9,7 @@ public class Cita {
         this.cita = cita;
         this.contexto = contexto;
     }
+    // Getters
 
     public String getAutor() {
         return autor;

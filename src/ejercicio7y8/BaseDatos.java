@@ -1,13 +1,14 @@
 package ejercicio7y8;
 import java.util.*;
 
+
 public class BaseDatos {
 
     private List<Cita> citas;
 
-    public BaseDatos() {
-        citas = new ArrayList<Cita>();
-
+    public BaseDatos() {    // Constructor
+        citas = new ArrayList<Cita>();  // Inicializa la lista de citas
+        // Agrega citas a la lista
         citas.add(new Cita("Albert Einstein", "La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir adelante.", "Motivacion"));
         citas.add(new Cita("Isaac Newton", "Si he logrado ver más lejos, ha sido porque he subido a hombros de gigantes.", "Inspiracion"));
         citas.add(new Cita("Galileo Galilei", "E pur si muove.", "Ciencia"));
@@ -26,5 +27,5 @@ public class BaseDatos {
 
     public void addCita(Cita cita) {
         citas.add(cita);
-    }
+    }   // Metodo para agregar una cita a la lista
 }
