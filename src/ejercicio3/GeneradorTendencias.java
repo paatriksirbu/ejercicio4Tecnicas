@@ -1,8 +1,11 @@
 package ejercicio3;
 
 public class GeneradorTendencias {
+
     public static Tendencias generarColeccionTendencias() {
+        // Crear una colección de tendencias
         Tendencias tendencias = new Tendencias();
+
         tendencias.addTendencia("Challenge de baile", 500000, "TikTok", "Entretenimiento", 14);
         tendencias.addTendencia("Recetas saludables", 300000, "Instagram", "Alimentación", 30);
         tendencias.addTendencia("Tutoriales de maquillaje", 200000, "YouTube", "Belleza", 21);

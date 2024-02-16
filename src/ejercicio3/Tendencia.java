@@ -1,6 +1,9 @@
 package ejercicio3;
 
+// Clase que representa una tendencia en redes sociales
 public class Tendencia {
+
+    // Atributos
     private String nombre;
     private int cantidad;
     private String origen;
@@ -14,6 +17,8 @@ public class Tendencia {
         this.categoria = categoria;
         this.duracion = duracion;
     }
+
+    // Getters
 
     public String getNombre() {
         return nombre;
@@ -35,7 +40,7 @@ public class Tendencia {
         return duracion;
     }
 
-    public void setCantidadMenciones(int cantidad){
+    public void setCantidadMenciones(int cantidad){ // Setters
         if (cantidad < 0){
             throw new IllegalArgumentException("La cantidad de menciones no puede ser menor que 0.");
         }
