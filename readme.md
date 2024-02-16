@@ -15,7 +15,7 @@ El programa ExpresionMatematica permite al usuario elegir entre realizar operaci
 # 11. Generador de Patrones en Arte ASCII
 El programa `PatronesASCII` en Java permite a los usuarios generar patrones visuales ASCII, como rectángulos, triángulos y rombos, utilizando un carácter específico y un tamaño definido. La selección del patrón se realiza mediante la entrada del usuario, y el programa ajusta dinámicamente el tamaño y la forma de los patrones según los parámetros proporcionados. Este ejercicio demuestra el manejo de estructuras de control y bucles en Java, proporcionando una forma creativa de aplicar conceptos básicos de programación para generar arte ASCII.
 
-
+Falta el ejercicio 10 y mejorar alguno de estos; Los enviare en la siguiente tarea puesto que no queria que se me pasara el plazo de entrega de esta por un ejericio. 
 
 ## Contacto
 
