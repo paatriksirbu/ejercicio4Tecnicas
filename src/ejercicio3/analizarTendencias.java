@@ -1,8 +1,11 @@
 package ejercicio3;
 import java.util.List;
 import java.util.ArrayList;
+<<<<<<< HEAD
 import java.util.Collections;
 import java.util.Comparator;
+=======
+>>>>>>> origin/master
 
 
 public class analizarTendencias {
@@ -14,6 +17,9 @@ public class analizarTendencias {
         }
         return tendencias;
     }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> origin/master
 }
