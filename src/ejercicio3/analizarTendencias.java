@@ -1,19 +1,12 @@
 package ejercicio3;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
+import java.util.*;
+import java.util.stream.Collectors;
 
 
 public class analizarTendencias {
 
-    public List<String> identificarTendencias(String[] datos){
-        List<String> tendencias = new ArrayList<>();
-        for (String dato : datos) {
-                tendencias.add(dato);
-        }
-        return tendencias;
+    public List<Tendencia> identificarTendenciasPorOrigen(List<Tendencia> tendencias, String origen){
+        return tendencias.stream().filter(tendencia -> tendencia.getOrigen().equals(origen)).collect(Collectors.toList());
     }
-
 
 }

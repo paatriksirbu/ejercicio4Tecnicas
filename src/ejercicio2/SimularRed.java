@@ -9,12 +9,12 @@ public class SimularRed {
         this.configuracion = configuracion;
     }
 
-    public void simular(){
+   /* public void simular(){
         Red red = new Red();
         List<Trafico> trafico = red.simularTrafico();
         List<Trafico> cuellosDeBotella = CuellosDeBotella.identificarCuellosDeBotella(trafico);
         mostrarResultados(cuellosDeBotella);
     }
-
+*/
 
 }
