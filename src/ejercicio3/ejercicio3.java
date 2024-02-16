@@ -3,12 +3,10 @@ import java.util.List;
 
 public class ejercicio3 {
     public static void main(String[] args) {
-        String[] datos = {};
 
-        analizarTendencias analizarTendencias = new analizarTendencias();
-        List<String> tendencias = analizarTendencias.identificarTendencias(datos);
+        Tendencias tendencias = GeneradorTendencias.generarColeccionTendencias();
 
-        for (String tendencia : tendencias) {
+        for (Tendencia tendencia : tendencias.getTendencias()) {
             System.out.println(tendencia);
         }
 

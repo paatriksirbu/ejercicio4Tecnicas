@@ -1,44 +1,20 @@
 package ejercicio3;
 
+import java.util.ArrayList;
+import java.util.Collection;
+
 public class Tendencias {
-    private String nombre;
-    private int cantidad;
-    private String origen;
-    private String categoria;
-    private int duracion; // en horas
+    private ArrayList<Tendencia> tendencias;
 
-    public Tendencias(String nombre, int cantidad, String origen, String categoria, int duracion) {
-        this.nombre = nombre;
-        this.cantidad = cantidad;
-        this.origen = origen;
-        this.categoria = categoria;
-        this.duracion = duracion;
+    public Tendencias() {
+        this.tendencias = new ArrayList<>();
     }
 
-    public String getNombre() {
-        return nombre;
+    public void addTendencia(String nombre, int cantidad, String origen, String categoria, int duracion){
+        this.tendencias.add(new Tendencia(nombre, cantidad, origen, categoria, duracion));
     }
 
-    public int getCantidad() {
-        return cantidad;
-    }
-
-    public String getOrigen() {
-        return origen;
-    }
-
-    public String getCategoria() {
-        return categoria;
-    }
-
-    public int getDuracion() {
-        return duracion;
-    }
-
-    public void setCantidadMenciones(int cantidad){
-        if (cantidad < 0){
-            throw new IllegalArgumentException("La cantidad de menciones no puede ser menor que 0.");
-        }
-        this.cantidad = cantidad;
+    public Collection<Tendencia> getTendencias(){
+        return this.tendencias;
     }
 }
